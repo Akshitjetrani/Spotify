@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 10px;
+    background-color: black;
+}
+
+.layout {
+    column-gap: 20px;
+}
+
+
+.left{
+    
+    padding: 10px;
+    width: 25vw;
+}
+
+
+.right{
+    
+    padding: 10px;
+    width: 75vw;
+}
+
+
+.svg-size{
+    width: 20px;
+}
+
+.main-svg {
+    width: 95px;
+}
+
+.p-1 {
+    padding: 15px 10px 10px 10px;
+}
+
+.left .home {
+
+    padding-left: 20px;
+}
+.home ul li {
+    list-style: none;
+    width: 25px;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.home ul li:hover, .home ul li img:hover {
+    color: brown;
+}
+.invert {
+    filter: invert(1);
+}
+
+.list {
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.gap-1 {
+    gap: 20px;
+}
+
+/* .logo {
+    padding-bottom: 15px;
+} */
+
+
+/* .libarary {
+    padding-top: 20px;
+    margin-left: 0px;
+} */
+
+.li {
+    padding-top: 10px;
+    border: 1px solid rgb(209, 174, 174);
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+   
+
+}
+
+.header {
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 72vh;
+
+
+}
+.header .plus-btn{
+    padding-right: 10px;
+}
+
+.footer {
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    
+    
+}
+
+
+.footer div a {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
