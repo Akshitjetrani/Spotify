@@ -127,6 +127,10 @@ body {
 
 .right{
     margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    max-height: 100vh;
+    overflow: scroll;
 }
 
 .right .header-r{
@@ -216,16 +220,19 @@ body {
 .right .artist .card{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 20px;
+    
+    
 }
 .right .artist .artists-sec {
     padding-top: 10px;
-    width:  200px;
-
+    width:  190px;
+    position: relative;
 }
 
-.right .artist .artists-sec .image .art-img{
+.right .artist .artists-sec .art-img{
     object-fit: contain;
-    border-radius: 130px;
+    border-radius: 50%;
     width: 100%;
     
 }
@@ -235,3 +242,20 @@ body {
     gap: 10px;
     
 }
+
+
+.play {
+    position: absolute;
+    background-color: rgb(35, 99, 35);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    top: 160px;
+    left: 130px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
