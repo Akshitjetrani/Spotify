@@ -128,9 +128,7 @@ body {
 .right{
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 20px;
-    max-height: 100vh;
-    overflow: scroll;
+    margin-right: 20px; 
 }
 
 .right .header-r{
@@ -162,6 +160,8 @@ body {
 
 }
 
+
+
 .right div .ent-btn button{
     width: 95px;
     height: 40px;
@@ -175,6 +175,11 @@ body {
     font-size: 15px;
 }
 
+
+.right div .ent-btn .sign-up:hover{
+    color: antiquewhite;
+    zoom: 1;
+}
 .right div .ent-btn .log-in {
     
     border-radius: 20px;
@@ -221,6 +226,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding-left: 20px;
+    max-height: 70vh;
+    overflow-y: scroll;
     
     
 }
@@ -238,7 +245,7 @@ body {
 }
 
 .right .artist .artists-sec .art-nm{
-    padding-left: 10px;
+    padding-left: 0px;
     gap: 10px;
     
 }

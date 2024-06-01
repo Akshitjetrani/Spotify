@@ -54,3 +54,59 @@
 .m-2{
     margin: 5px;
 }
+
+
+/* WebKit-based browsers */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2e2e2e;  /* Dark background for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5a5a5a;  /* Dark color for the scrollbar thumb */
+    border-radius: 10px;  /* Rounded corners */
+    border: 3px solid #2e2e2e;  /* Padding around the thumb */
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #5a5a5a #2e2e2e;
+}
+
+
+  /* Container style */
+        .scroll-container {
+            max-height: 200px; /* Set the maximum height */
+            overflow-y: auto; /* Show scrollbar only when needed */
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 20px;
+            width: 300px;
+        }
+
+        /* WebKit-based browsers */
+        .scroll-container::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+
+        .scroll-container::-webkit-scrollbar-track {
+            background: #2e2e2e;  /* Dark background for the scrollbar track */
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+            background-color: #5a5a5a;  /* Dark color for the scrollbar thumb */
+            border-radius: 10px;  /* Rounded corners */
+            border: 3px solid #2e2e2e;  /* Padding around the thumb */
+        }
+
+        /* Firefox */
+        .scroll-container {
+            scrollbar-width: thin;
+            scrollbar-color: #5a5a5a #2e2e2e;
+        }
