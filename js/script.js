@@ -146,10 +146,10 @@ async function getSongs() {
 
  const playMusic =(track)=>{
     // let audio = new Audio(track)
-    currantSong.src =  track 
+    currantSong.src = track 
     // To Play one song at same time use .src only
     currantSong.play()
-    play.src = "src/pause.svg"
+    play.src = "pause.svg"
  }
 
 
@@ -194,11 +194,11 @@ async function main() {
         play.addEventListener("click", ()=>{
             if(currantSong.paused){
                 currantSong.play()
-                play.src = "src/pause.svg"
+                play.src = "pause.svg"
             }
             else{
                 currantSong.paused()
-                paused.src = "src/assats/play.svg"
+                paused.src = "play.svg"
             }
         })
 
