@@ -192,13 +192,13 @@ async function main() {
         // Attach an eavt Listner to P[aly, Next and previous
 
         play.addEventListener("click", ()=>{
-            if(currantSong.paused){
+            if(currantSong.paused()){
                 currantSong.play()
-                play.src = "pause.svg"
+                play.src = "pause.svg";
             }
             else{
                 currantSong.paused()
-                paused.src = "play.svg"
+                paused.src = "play.svg";
             }
         })
 
