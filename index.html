@@ -14,14 +14,14 @@
 <body>
     <div class="layout flex  ">
         <!-- left Side Bar -->
-        <div class="left padding  border border-redius ">
+        <div class="left border border-redius">
+            <img src="cross.svg" alt="" srcset="" class="close svg-size invert curser-pointer">
             <!-- Home -->
             <div class="home p-1 gap-1 bg-gray border-redius ">
                 <div class="logo curser-pointer">
-                    <img src="src/logo.svg" alt="logo" srcset="" class="main-svg invert">
+                    <img src="src/logo.svg" alt="logo" srcset="" class="main-svg invert curser-pointer">
                 </div>
-                <ul class="list flex flex-diraction">
-
+                <ul class=" list flex flex-diraction">
                     <li class="flex curser-pointer gap-1">
                         <img src="src/home.svg" alt="home" srcset="" class="svg-size invert">
                         <div class=" curser-pointer">
@@ -44,14 +44,14 @@
                         <div class="logo curser-pointer in">Your liabrary</div>
                     </div>
                     <img src="src/plus.svg" alt="Expand" srcset="" class="invert svg-size curser-pointer plus-btn">
-                   
                 </div>
+
                 <div class="songlist">
                     <ul class="list">
-                        
+
                     </ul>
                 </div>
-                
+
 
                 <div class="footer">
                     <div>
@@ -89,9 +89,13 @@
             </header>
         </div>
         <!-- Right Side Bar -->
-        <div class="right  gap-1 bg-gray  ">
+        <div class="right gap-1 bg-gray  ">
             <div class="header-r flex">
+
                 <div class="l-R-btn">
+
+                    <img src="hamburgar.svg" alt="" srcset="" class="hamburgar svg-size invert curser-pointer">
+
                     <button><img src="src/left.svg" alt="" srcset=""
                             class="leftbtn invert svg-size curser-pointer"></button>
                     <button><img src="src/right.svg" alt="" srcset="" class="rightbtn invert svg-size curser-pointer ">
@@ -106,9 +110,7 @@
             <div class="artist">
                 <div class="art-head flex">
                     <p class="pl"><a href="#">Populer artists</a></p>
-                    
                 </div>
-
                 <div class="card">
                     <div class="artists-sec border ">
                         <div class="play">
@@ -125,33 +127,38 @@
                             <h6>Artist</h6>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
         </div>
     </div>
     <!-- Play-bar -->
     <div class="play-bar invert">
-        <div class="seekbar">
+        <div class="seekbar curser-pointer">
             <div class="circle">
 
             </div>
         </div>
-        <div class="songinfo">
 
-        </div>
-        <div class="song-btn">
-            <img src="src/assats/back.svg" alt="" srcset="" class="curser-pointer" id="previous">
-            <img src="src/assats/play.svg" alt="" srcset="" class="curser-pointer" id="play">
-            <img src="src/assats/next.svg" alt="" srcset="" class="curser-pointer" id="next">
-        </div>
-        <div class="songtime">
+        <div class="abovebar">
+            <div class="songinfo invert btn-width">
 
+            </div>
+            <div class="song-btn btn-width">
+                <img src="src/assats/back.svg" alt="" srcset="" class="curser-pointer" id="previous">
+                <img src="play.svg" alt="" srcset="" class="curser-pointer " id="play">
+                <img src="src/assats/next.svg" alt="" srcset="" class="curser-pointer" id="next">
+            </div>
+            <div class="dus btn-width" >
+                <div class="timevol">
+                    
+                </div>
+                <div class="songtime invert">
+                </div>
+                <img src="valum.svg" alt="" srcset="" class="curser-pointer " id="valum">
+            </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>

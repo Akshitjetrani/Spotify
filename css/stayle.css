@@ -10,25 +10,27 @@ body {
 }
 
 .layout {
-    column-gap: 0px;
-    margin-top: 0px;
+    
     gap: 5px;
+    
 }
 
 
 .left {
-    /* height: 79vh; */
     width: 25vw;
     margin: 0px;
     
 }
-
+.left .close{
+    display: none;
+}
 
 .right {
     
     height: 89vh;
     width: 75vw;
 }
+
 
 
 .svg-size {
@@ -85,11 +87,10 @@ body {
 
 .li {
     padding-top: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
     display: flex;
     height: 69.5vh;
     flex-direction: column;
-    position: relative;
 }
 
 
@@ -105,32 +106,13 @@ body {
     padding-right: 10px;
 }
 
-.footer {
-    font-size: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 13px;
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 20px;
-    padding-left: 20px;
-
-
-}
-
-
-.songlist {
-    max-height: 75vh;
-    
-}
+/* Liabarary Song List */
 
 .songlist .list {
-
     padding: 0px 10px ;
     margin-bottom: 40px;
     overflow-y: scroll ;
-    max-height: 40vh;
-
+    max-height: 50vh;
 }
 
 .songlist ul li {
@@ -139,12 +121,13 @@ body {
     border: 1px solid white;
     border-radius: 10px;
     margin: 10px 0px;
-    gap: 10px;
-    
+    gap: 15px;
+    justify-content: space-between;
 }
 
 .songlist ul li .info{
-    width: 195px;   
+    
+    align-items: flex-start;  
 }
 
 .songlist ul li .info .song-name, .songlist ul li .info .song-artist  {
@@ -164,9 +147,16 @@ body {
     font-size: 15px;
     padding-right: 10px;
 }
-
-
-
+.footer {
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: absolute;
+    bottom: 70px;
+    padding: 0px 17px 0px 17px;
+    margin: 0px 0px 0px 0px
+}
 
 .footer div a {
     list-style: none;
@@ -177,12 +167,11 @@ body {
 /* Heder Componets CSS Start */
 
 .right {
-    margin-top: 20px;
-    margin-bottom: 35px;
-    margin-right: 20px;
+    height: 89vh;
     padding: 0;
     border-radius: 10px;
     position: relative;
+    
 }
 
 .right .header-r {
@@ -190,18 +179,17 @@ body {
     align-items: center;
     background-color: rgb(39, 19, 19);
     border-radius: 10px;
-    height: 70px;
+    height: 50px;
 
 }
 
 .right div div button {
     background: rgb(54, 2, 2);
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
-    margin: 10px;
-    padding: 10px;
+    gap: 5xp;
 }
 
 
@@ -218,7 +206,9 @@ body {
 
 }
 
-
+.l-R-btn{
+    display: flex;
+}
 
 .right div .ent-btn button {
     width: 95px;
@@ -293,7 +283,7 @@ body {
     flex-wrap: wrap;
     padding-left: 20px;
     max-height: 70vh;
-    overflow-y: scroll;
+    overflow-y: auto    ;
 
 
 }
@@ -333,8 +323,6 @@ body {
     transition: all 1s ease-out;
 }
 
-
-
 .play-bar {
     position: fixed;
     bottom: 0px;
@@ -356,7 +344,6 @@ body {
     margin-bottom: 10px;
 }
 
-
 *{
     color: aliceblue;
 }
@@ -364,8 +351,8 @@ body {
 
 .seekbar {
     position: absolute;
-    height: 2px;
-    width: 96.5%;
+    height: 4px;
+    width: 95.4%;
     background: black;
     bottom: 10px;
     border-radius: 10px;
@@ -381,4 +368,102 @@ body {
     background-color: black;
     bottom: 6.5px;
     transition: left 0.5s;
-}          
+}
+.font-colour{
+    color: white;
+}
+
+.btn-width{
+    width: 400px;
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    left: 10px;
+    align-items: center;
+}
+
+.abovebar .songinfo{
+    padding-left: 10px;
+   
+}
+.songtime {
+    justify-content: flex-end;
+}
+
+.dus{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.timevol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hamburgar{
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .left{
+        background-color: black;
+        position: absolute;
+        left: -120%;
+        transition: all 0.3s;
+        z-index: 1;
+        width: 330px;
+        margin-left: 0;
+        height: 85vh;
+    }
+
+    .left .close {
+        display: flex;
+        position: absolute;
+        left: 200px;
+        top: 20px; 
+    }
+
+    .li {
+        padding-top: 10px;
+        margin-top: 15px;
+        display: flex;
+        height: 45.5vh;
+        flex-direction: column;
+    }
+
+    .songlist ul li .info{
+        word-wrap: break-word;
+        align-items: center; 
+        width: 20px; 
+        font-size: 1px;
+    }
+
+
+    .right {
+    
+        height: 81vh;
+        width: 100vw;
+        
+
+    }
+    .hamburgar{
+        display: block;
+    }
+
+    
+    
+    .songlist .list {
+    
+        padding: 0px 10px ;
+        margin-bottom: 10px;
+        overflow-y: scroll ;
+        max-height: 20vh;
+    
+    }
+    
+}
